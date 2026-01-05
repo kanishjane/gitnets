@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+
+  <body>
+    <div class="weather-app">
+      <header>
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-input"
+            id="city-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1 class="current-city" id="current-city"></h1>
+            <p class="current-details">
+              <span id="date-time"></span>,
+              <span id="description"></span><br />
+              Humidity: <strong id="humidity"></strong>%,
+              Wind: <strong id="wind"></strong> km/h
+            </p>
+          </div>
+
+          <div class="current-temperature">
+            <img id="weather-icon" />
+            <span class="current-temperature-value" id="temperature"></span>
+            <span class="current-temperature-unit">°C</span>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <p>
+          This project was coded by
+          <a href="#" target="_blank">Jane Kanish</a> and is
+          <a href="https://github.com/YOUR-USERNAME/YOUR-REPO" target="_blank">
+            on GitHub
+          </a>
+          and
+          <a href="https://YOUR-NETLIFY-SITE.netlify.app" target="_blank">
+            hosted on Netlify
+          </a>
+        </p>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
